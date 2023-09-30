@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+  <meta charset="UTF-8">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Startup Business Profit Predictionn</title>
+  
+</head>
+
+<body style="background: white;">
+ <div class="login">
+	<h1 style="color:skyblue;">Startup Business Profit Prediction</h1>
+
+
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text"  id="r_d_expenses" name="r_d_expenses" placeholder="R&D Expenses *" value="" required/><br>
+      <input type="text"  id="marketing_expenses" name="marketing_expenses" placeholder="Marketing Expenses *" value="" required/><br>
+      <input type="text"  id="administration_expenses" name="administration_expenses" placeholder="Administration Expenses *" value="" required/><p>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button></p>
+    </form>
+
+   <br>
+   <br>
+   <h4 style="color:rgb(4, 57, 162);">
+   {{ Result }} </h4>
+
+ </div>
+
+
+</body>
+</html>
